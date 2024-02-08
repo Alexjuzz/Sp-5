@@ -11,8 +11,7 @@ import java.util.List;
 public interface TaskRepository extends JpaRepository<Task,Long> {
         List<Task> findByStatus(Status status);
 
-//        @Query("SELECT t FROM Task t WHERE t.Date = ?1")
-//        Task findByDate(Date date);
+        Task findByName(String name);
 
 
 }

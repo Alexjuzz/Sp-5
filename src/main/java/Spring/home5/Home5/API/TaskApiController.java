@@ -8,11 +8,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/api")
-public class TaskController {
-    private final TaskService service;
+public class TaskApiController {
+    private final TaskApiService service;
 
     @Autowired
-    public TaskController(TaskService service) {
+    public TaskApiController(TaskApiService service) {
         this.service = service;
     }
 

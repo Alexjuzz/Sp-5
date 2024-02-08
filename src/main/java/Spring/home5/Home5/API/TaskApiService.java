@@ -6,12 +6,11 @@ import Spring.home5.Home5.Task.Task;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class TaskService {
+public class TaskApiService {
 
     @Autowired
     private TaskRepository repository;

@@ -9,6 +9,14 @@ import java.util.Date;
 @Entity
 @Table(name = "Tasks")
 public class Task {
+        public Task(String name, String description) {
+                this.name = name;
+                this.description = description;
+                onCreate();
+        }
+
+        public Task() {
+        }
 
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
